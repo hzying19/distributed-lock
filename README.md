@@ -11,9 +11,9 @@ __1、添加maven依赖(本地仓)__ <br/>
 
 
 __2、在需要添加分布式锁的对象上添加@Distributedlock注解，并指定锁key表达式，如按用户名加分布式锁，此处支持spring el表达式。__ <br/>
+
 @Component
 public class TestService {
-
     @Distributedlock("#param.userName")
     public void test(TestParam param) {
         System.out.println(param.getName()+"------------------------------------------");
