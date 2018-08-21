@@ -1,3 +1,7 @@
+项目说明：
+提供轻量级分布式锁，目前使用redis提供的set(lockKey, requestId, "NX", "EX", expireTime)功能以实现分布式锁。<br/>
+支持使用其它锁，如使用zookeeper节点功能，以实现锁。
+======================================================================<br/>
 1、添加maven依赖(本地仓)
 <dependency>
   <groupId>com.wtoip.pay</groupId>
@@ -17,7 +21,7 @@ public class TestService {
 }
 
 ======================================================================<br/>
-默认使用redis提供分布式锁，支持SPI方式扩展。
-扩展示例：
+默认使用redis提供分布式锁，支持SPI方式扩展。<br/>
+扩展示例：<br/>
 在自己项目META-INF/services下添加com.common.distributedlock.lock.IDistributedLock文件，并在文件中指定扩展类。
 如：com.common.distributedlock.lock.TestDistributedLockImpl
