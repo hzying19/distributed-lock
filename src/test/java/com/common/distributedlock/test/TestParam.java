@@ -10,13 +10,13 @@ package com.common.distributedlock.test;
  * created on 2018/8/21 15:28
  */
 public class TestParam {
-    private String name;
+    private String userName;
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }

@@ -23,7 +23,7 @@ public class TestLock extends AbstractTest {
     @Test
     public void testLock() {
         TestParam testParam = new TestParam();
-        testParam.setName("haha`~~");
+        testParam.setUserName("haha`~~");
 
         testService.test(testParam);
     }
@@ -31,7 +31,7 @@ public class TestLock extends AbstractTest {
     @Test
     public void testMutiLock() throws InterruptedException {
         TestParam testParam = new TestParam();
-        testParam.setName("haha`~~");
+        testParam.setUserName("haha`~~");
 
         int count = 10;
         final CyclicBarrier barrier  = new CyclicBarrier(count);

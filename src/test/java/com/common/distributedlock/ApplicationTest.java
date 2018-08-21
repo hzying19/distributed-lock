@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ImportResource;
  * @version 2.0, 2017/8/9
  * @since 2.0
  */
-@SpringBootApplication(scanBasePackages = {"com.wtoip.pay.distributedlock"})
+@SpringBootApplication(scanBasePackages = {"com.common.distributedlock"})
 @ImportResource("classpath*:META-INF/dubbo*.xml")
 public class ApplicationTest {
 }

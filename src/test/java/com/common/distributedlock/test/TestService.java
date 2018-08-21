@@ -15,9 +15,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class TestService {
 
-    @Distributedlock("#param.name")
+    @Distributedlock("#param.userName")
     public void test(TestParam param) {
-        System.out.println(param.getName()+"------------------------------------------");
+        System.out.println(param.getUserName()+"------------------------------------------");
     }
 
 }
