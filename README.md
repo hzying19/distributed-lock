@@ -4,9 +4,9 @@
 ======================================================================<br/>
 1、添加maven依赖(本地仓)
 <dependency>
-  <groupId>com.wtoip.pay</groupId>
-	<artifactId>distributed-lock</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+  <groupId>com.common</groupId>
+  <artifactId>distributed-lock</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
 </dependency>
 
 
