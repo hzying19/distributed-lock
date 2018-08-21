@@ -2,7 +2,7 @@
 提供轻量级分布式锁，目前使用redis提供的set(lockKey, requestId, "NX", "EX", expireTime)功能以实现分布式锁。<br/>
 支持使用其它锁，如使用zookeeper节点功能，以实现锁。
 ======================================================================<br/>
-1、添加maven依赖(本地仓)
+__1、添加maven依赖(本地仓)__
 <dependency>
   <groupId>com.common</groupId>
   <artifactId>distributed-lock</artifactId>
@@ -10,7 +10,7 @@
 </dependency>
 
 
-2、在需要添加分布式锁的对象上添加@Distributedlock注解，并指定锁key表达式，如按用户名加分布式锁，此处支持spring el表达式。
+__2、在需要添加分布式锁的对象上添加@Distributedlock注解，并指定锁key表达式，如按用户名加分布式锁，此处支持spring el表达式。__
 @Component
 public class TestService {
 
@@ -21,7 +21,7 @@ public class TestService {
 }
 
 ======================================================================<br/>
-默认使用redis提供分布式锁，支持SPI方式扩展。<br/>
+__支持SPI方式扩展__<br/>
 扩展示例：<br/>
 在自己项目META-INF/services下添加com.common.distributedlock.lock.IDistributedLock文件，并在文件中指定扩展类。
 如：com.common.distributedlock.lock.TestDistributedLockImpl
