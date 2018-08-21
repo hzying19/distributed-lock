@@ -6,7 +6,7 @@
 </dependency>
 
 
-2、在需要添加分布式锁的对象上添加@Distributedlock注解，并指定锁key表达式，如添加用户名分布式锁，此处支持spring el表达式。
+2、在需要添加分布式锁的对象上添加@Distributedlock注解，并指定锁key表达式，如按用户名加分布式锁，此处支持spring el表达式。
 @Component
 public class TestService {
 
