@@ -2,7 +2,7 @@
 提供轻量级分布式锁，目前使用redis提供的set(lockKey, requestId, "NX", "EX", expireTime)功能以实现分布式锁。<br/>
 支持使用其它锁，如使用zookeeper节点功能，以实现锁。
 ======================================================================<br/>
-__1、添加maven依赖(本地仓)__
+__1、添加maven依赖(本地仓)__ <br/>
 <dependency>
   <groupId>com.common</groupId>
   <artifactId>distributed-lock</artifactId>
