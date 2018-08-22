@@ -18,7 +18,7 @@ import java.util.Iterator;
 import java.util.ServiceLoader;
 
 /**
- * <一句话描述>
+ * 程序初始化入口
  *
  * @author huangzy
  * @version 2.0
@@ -27,7 +27,6 @@ import java.util.ServiceLoader;
  * created on 2018/8/21 11:29
  */
 @Configuration
-//@ConditionalOnBean(RedisTemplate.class)
 public class LockConfiguration {
     @Bean
     @ConditionalOnMissingBean(IDistributedLock.class)
