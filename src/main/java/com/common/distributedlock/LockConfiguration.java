@@ -61,7 +61,7 @@ public class LockConfiguration {
         IDistributedLock iDistributedLock = null;
         if (iterator != null&& iterator.hasNext()) {
             if (iDistributedLock != null) {
-                throw new LockException("只有存在一个IDistributedLock SPI扩展实现");
+                throw new LockException("只能存在一个IDistributedLock SPI扩展实现");
             }
             iDistributedLock = iterator.next();
         }
